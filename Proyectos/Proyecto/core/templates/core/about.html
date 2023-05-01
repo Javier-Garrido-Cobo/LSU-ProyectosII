@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+
+
+	<!-- CSS fotos navbar -->
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<script src="./JS/JS.js"></script>
+
+	<!-- CSS Textos -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inconsolata&family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+	<!-- Logo pestaña -->
+	<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAB2UlEQVRIS7WV4TEFQRCE+0WACBABIkAEiAARIAJEgAgQARkgAmRABIiA+qq2X/Xt2zv356bqqu52b7pnemdmZ5rYZhPjawzBvqQ9SS+S7iRdlO83Sc+S7oeCHCLYkXQraa0AXBZwCM4D9EPSmaTHFlEfwbIkHJfCCZDr8pxUYD+SNotPZ6tFAPh3cUACk2xJsizbgQI42bJHtgQ2t5qAHx8k7RYHooIEJ94h/+oBZ/9J0nHKVRMAtFoySBKAIUr9M3KDW9p1B5EEVAvR25DJJKyR/mvJog/cvmRBxXXKlIXDIHiXdFoiZ9ly8W7NM/KUntI9qglYIEoiRw4ODSNt1vkGEPM7mrNfG/sUxWCj4Ug5kgWWcrUipxEJzMZ5dQhY+C27SMBjS81rufBDXjJfsDxk0tpo/FMfaEpE1RmYrOgPMv8cc8gAtaqllqseKezfWNrMgENm9rRkSc3rseDqyrFy4Gbra7ShOvdMInLkcUV5rCCPB+RCFdFsHNhQna8EMF1fjxUw5tXUGnYeWH2lCDl7dDWWHe9BOde5b1znWMjC8uHRG1exAQnzZ6FUhy4cUmX+I4OtdemgOQWSTfZvBhk1zpaFW4vG8hrfzZvMAGPu5FaDjl6bnOAPAmeHGQvt0wgAAAAASUVORK5CYII=" style="color: rgb(255,255,255);" />
+
+
+	<title>LSU</title>
+</head>
+<body>
+    <style type="text/css">
+        *{
+            font-family: 'Montserrat', sans-serif;
+        }
+        .contenedor{
+        background-color: rgb(255,255,255);
+        border-radius: 5px;
+      }
+      .contenedor-noticias{
+        background-color: rgb(255,255,255);
+        border-radius: 5px;
+        padding-top: 9px;
+      }
+      .contenedor-noticias:hover{
+        border:5px solid rgb(237,239,244);;
+      }
+      .footer-menu{
+        margin-top: 20px;
+        margin-bottom: 35px;
+      }
+      .page-footer{
+        background-color: rgb(37,43,47) !important;
+      }
+      .nav-footer{
+        margin-bottom: 20px;
+        color: rgb(255,255,255);
+      }
+      .footer-title{
+        color: rgb(255,255,255);
+      }
+      .nav-icon{
+        font-size: 2rem;
+        color: rgb(255,255,255);
+        padding-bottom: 20px;
+      }
+      .footer-line{
+        background-color: rgb(255,255,255);
+        height: 3px;
+      }
+      .footer-text{
+        color: rgb(255,255,255);
+        font-family: 'Lato', sans-serif;
+      }
+      .footer-2{
+        background-color: rgb(0,0,0);
+      }
+      .nav__l, .nav__link{
+        display: grid;
+        grid-template-columns: max-content max-content;
+        align-items: center;
+        column-gap: 1rem;
+      }
+      
+      .nav-footer-icon{
+        margin-right: 10px; 
+      }
+      .nav-footer-icon, .nav-footer-name{
+        vertical-align: super;
+        color: rgb(255,255,255);
+        font-size: 22px;
+      }
+      .nav__name{
+        vertical-align: super;
+      
+      }
+      .navbar-toggler{
+        margin-top: 6px;
+        margin-bottom: 6px;
+        margin-left: 5px;
+        color: rgb(255,255,255);
+      }
+      .navbar-toggler:hover{
+        filter: grayscale(1) brightness(0.5);
+      }
+      
+      .nav__link:hover{
+        filter: grayscale(0.6) brightness(0.5);
+      }
+      .nav-footer-link:hover{
+        filter: grayscale(0.6) brightness(0.5);
+      }
+      .noticias-link{
+        text-decoration: none !important;
+        color: rgb(0,0,0);
+      }
+      .noticias-link:hover{
+        filter: grayscale(0.6) brightness(0.5);
+        text-decoration: none !important;
+        text-decoration-color: rgb(37,43,47);
+      }
+      .cards-noticias{
+        margin-bottom: 33px;
+      }
+      .Historia-fotos{
+        height: 200px;
+        width: 100%;
+      }
+      .fotos-hist2{
+        height: 300px;
+        width: 100%;
+      }
+      .fotos-hist2:hover{
+        filter: grayscale(0);
+        border:5px solid rgb(237,239,244);
+      }
+      .contenedor-historia{
+        background-color: rgb(255,255,255);
+      }
+      .nav-contacto:hover{
+        text-decoration: none;
+        filter: grayscale(0.6) brightness(0.5);
+      }
+      .center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      </style>
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<div class="l-navbar">	
+    <div class="container-nav">
+      <nav class="nav navbar-expand-lg navbar-dark bg-dark fixed-top" style="font-size: 1.2rem;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto mr-auto">
+            <li class="nav__link">
+              <a class="nav-link" href="../"><i class='bx bxs-home-smile nav__logo-icon'></i>Inicio<span class="sr-only">(current)</span></a>	
+            </li>
+            <li class="nav__link nav-link-1">
+              <a class="nav-link" href="../products"><i class='bx bxs-contact nav__logo-icon'></i>Test<span class="sr-only">(current)</span></a>	
+            </li> 
+            <li class="nav__link">
+              <a class="nav-link" href="../base"><i class='bx bx-news nav__logo-icon'></i>Tus notas<span class="sr-only">(current)</span></a>	
+            </li>
+            <li class="nav__link">
+              <a class="nav-link" href="../about"><i class='bx bxs-contact nav__logo-icon'></i>About Us<span class="sr-only">(current)</span></a>	
+            </li>     	
+            {% if request.user.is_authenticated %}
+                    <li class="nav-item">
+                      <a class="nav-link" href={% url 'logout' %}><i class='bx bxs-log-out nav__logo-icon'></i>Salir</a>
+                    </li>
+
+            {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href={% url 'login' %}>Ingresar</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href={% url 'register' %}>Registrarse</a>
+                    </li>
+
+            {% endif %}						
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+   
+
+
+    {% block content %}{% endblock %}
+</head>
+<body>
+    <div class="container-fluid" style="margin-top: 60px; width: 70%;">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 align-self-center">
+                <h3 style="text-align: center;">¿Qué es Lets See Universities (LSU)</h3><hr>
+              <p style="text-align: center; margin-top: 30px;margin-bottom: 30px;">
+                Para el desarrollo de este proyecto se ha optado por realizar 3 sprints, de duración un mes.
+                Cada sprint se centrará en el desarrollo de epics, definidos como funciones globales a
+                implementar. Cada epic estará definido por un conjunto de tareas, features, que
+                implementarán las distintas funcionalidades que necesita para implementar la
+                funcionalidad dentro del proyecto. Hemos utilizado la metodología Scrum, a continuación explicaremos en qué consiste.
+              </p>
+              <p style="text-align: center;  margin-top: 30px;margin-bottom: 30px;">
+                Scrum es una metodología de trabajo ágil que se utiliza para desarrollar proyectos en equipo. Esta metodología se centra en la entrega continua de un producto, con el objetivo de cumplir con los requisitos del cliente de manera eficiente y efectiva.
+              </p>
+              <p style="text-align: center;  margin-top: 30px;margin-bottom: 30px;">
+                Scrum se basa en un marco de trabajo en el que se dividen los proyectos en ciclos cortos llamados sprints, que generalmente duran entre dos y cuatro semanas. Cada sprint comienza con una reunión de planificación en la que el equipo decide qué elementos del trabajo deben completarse durante el sprint.
+                </p>
+                <div style="text-align: center;">
+                    <img src="/static/paralax/sprint.png" alt="image" style="width:1300px; height:700px; margin-top: 25px; margin-bottom: 40px; ">
+                  </div>
+                <p style="text-align: center;  margin-top: 30px;margin-bottom: 30px;">
+                    Durante el sprint, el equipo trabaja en estrecha colaboración para completar los elementos de trabajo definidos en la reunión de planificación. Cada día, el equipo se reúne en una reunión diaria de Scrum para revisar el progreso, identificar y resolver problemas y ajustar el plan de trabajo según sea necesario.Al final de cada sprint, se realiza una reunión de revisión del sprint para demostrar el trabajo completado al cliente y recibir comentarios. También se lleva a cabo una reunión de retrospectiva del sprint para evaluar el proceso y encontrar formas de mejorar en el futuro.     
+                </p>
+
+                <p style="text-align: center;  margin-top: 30px;margin-bottom: 60px;">
+                    En resumen, Scrum es una metodología de trabajo colaborativo y ágil que se centra en la entrega continua de un producto de alta calidad. Al dividir el trabajo en ciclos cortos y trabajar en estrecha colaboración, los equipos pueden cumplir los requisitos del cliente de manera más eficiente y efectiva.
+                </p>
+                <p style="text-align: center;  margin-top: 30px;margin-bottom: 60px;">
+                  <a href="../admin" class="card-link btn btn-primary">Soy Administrador</a>
+                </p>
+            </div>
+          </div>
+    </div>
+    
+    
+    <div class="container-fluid" id="parallax-img2">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 align-self-center">
+            <h1 class="text-center" style="padding-top: 230px;">SIEMPRE MEJORANDO</h1>
+          </div>
+        </div>
+      </div>
+      
+      <style type="text/css">
+        #parallax-img2{
+          background-image: url("../static/paralax/para2.png");
+          height: 650px;
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        h1{
+          color: rgb(255,255,255);
+        }
+      </style>
+
+<div class="container-fluid" style="width: 80%; margin-bottom: 50px;">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 align-self-center">
+        <h3>UFV. Carretera Pozuelo a Majadahonda, Km 1.800, 28223 Madrid <hr></h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.6031875923536!2d-3.8363377487774395!3d40.43978476205924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4185cfe04a3987%3A0x50d6db0ba10cb305!2sUniversidad%20Francisco%20de%20Vitoria!5e0!3m2!1ses!2ses!4v1623472674574!5m2!1ses!2ses" style=" width: 100%; height: 700px;padding: 5px;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+    
+</body>
+</html>
